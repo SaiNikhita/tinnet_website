@@ -1,0 +1,14 @@
+{
+  "name": "tinnet",
+  "version": "1.0.0",
+  "description": "Tinnet website",
+  "main": "/frontend/src/main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^10.0.0"
+  }
+}
