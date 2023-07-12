@@ -2,8 +2,8 @@
 node_modules/*
 .venv/*
 backend/__pycache__/*
-frontend_/.angular/*
-frontend_/.editconfig/*
-frontend_/.vscode/*
-frontend_/node_modules/*
+frontend/.angular/*
+frontend/.editconfig/*
+frontend/.vscode/*
+frontend/node_modules/*
 backend/.venv/*
