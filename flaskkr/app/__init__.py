@@ -2,7 +2,6 @@ from flask import Flask, url_for
 from importlib import import_module
 from structure import dash_app
 from os import path
-import logging
 
 def register_blueprints(app):
     for module_name in ('base', 'structure'):
@@ -13,8 +12,8 @@ def register_blueprints(app):
         print(a)
 
 def create_app():
-    print("in app")
     app = Flask(__name__, static_folder='base/static')
     register_blueprints(app)
     app = dash_app.Add_Dash(app)
     return app
+
