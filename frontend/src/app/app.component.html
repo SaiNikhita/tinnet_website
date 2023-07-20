@@ -1,0 +1,51 @@
+<header>
+  <div id="nav" style="width: 100%">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
+      <a class="navbar-brand" href="#"
+        ><img src="/assets/logo.png" style="max-width: 50%" alt="logo"
+      /></a>
+      <p class="navbar-text text-white">
+        <span class="display-4 font-weight-normal">Xin Group</span
+        ><span class="lead"> dynamiX at interfaces</span>
+      </p>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-light">
+            <a class="nav-link text-dark" href="#">Login</a>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="main_container" style="background-color: #efefef">
+  <div id="search_upload" class="container-fluid">
+    <app-search-or-upload></app-search-or-upload>
+  </div>
+  <div id="dashboard" class="row" style="padding: 25px 25px 25px 25px">
+    <div *ngIf="a" class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <app-table></app-table>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="b" class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <app-structure></app-structure>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="c" class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <app-analysis></app-analysis>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
